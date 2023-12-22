@@ -1,0 +1,39 @@
+package myjava;
+import java.util.Scanner;
+ class hellow
+ {  public static void main(String args[])
+      {                                    System.out.println("Enter the marks of subject");
+		 	  System.out.println("Enter mark for math : ");
+		 	  Scanner sc=new Scanner(System.in);
+		 	  int mat=sc.nextInt();
+		 	 System.out.println("Enter mark for English : ");
+		 	  int eng=sc.nextInt();
+		 	 System.out.println("Enter mark for marathi: ");
+		 	  int mar=sc.nextInt();
+		 	 System.out.println("Enter mark for Science: ");
+		 	  int sci=sc.nextInt();
+		 	 System.out.println("Enter mark for hindi: ");
+		 	  int hin=sc.nextInt();
+		 	  int sum=0;
+		 	  sum=mat+eng+mar+sci+hin;
+		 	  sum=sum/5;
+		 	 System.out.println(sum);
+		 	if(sum>=50)
+  {
+		 		  System.out.println("You passed exam with C grade");
+		 	  }
+		 	  else if(sum>=70)
+		 	  {
+		 		  System.out.println("You passed exam with B grade");
+		 	  }
+		 	  else if(sum==100)
+		 	  {
+		 		  System.out.println("You passed with A grade");
+		 	  }
+		 	  else
+		 	  {
+		 		  System.out.println("You passed ");
+		 	  }
+		 	  
+			 }
+ }
