@@ -1,0 +1,26 @@
+package myjava;
+import java.util.Scanner;
+class hellow
+{
+	public static void main(String args[])
+	{
+		System.out.println("Enter the area for calculate : ");
+		int area=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the length for suare: ");
+		int len=sc.nextInt();
+		area=len*len;
+		System.out.println("area of square is"+area);
+		System.out.println("Enter the length and height of triangle: ");
+		int height=sc.nextInt();
+		int width=sc.nextInt();
+		area=(height*width)/2;
+		System.out.println("Area of triangle is: "+area);
+		System.out.println("Enter the radius for the circle area: ");
+		double rad=sc.nextDouble();
+		double area1=Math.PI*(rad*rad);
+		System.out.println("Area of the circle is : "+area1);
+		
+		
+	}
+}
