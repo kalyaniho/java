@@ -1,0 +1,32 @@
+package myjava;
+import java.util.Scanner;
+class Word
+{
+	public static void main(String args[])
+	{
+		System.out.println("***--Word Count Game--***");
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the sentence: ");
+		String str=sc.nextLine();
+		System.out.println(str);
+		int count=1;
+		char choice;
+		do
+		{
+			for(int i=0;i<str.length();i++)
+			{
+
+				if(str.charAt(i)==' ' && str.charAt(i+1)!=' ')
+				{
+					count++;
+				}
+			}
+			System.out.println("Count is : "+count);
+			System.out.println("Do you want continue(Y/N): ");
+			choice=sc.next().charAt(0);
+		}while(choice=='y' || choice=='Y');
+		
+		
+		
+	}
+}
